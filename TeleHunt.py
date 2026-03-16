@@ -9,9 +9,9 @@ import threading
 import os
 
 # === CONFIGURATION ===
-BOT_TOKEN = "" # Bot Token, can get it from @BotFather
-CHAT_SOURCE = "" # ID of the source chat (group, channel, etc.)
-CHAT_DESTINATION = "" # ID of the destination chat
+BOT_TOKEN = "" # Bot Token can be found in https://intelligence.any.run/analysis/lookup#{%22query%22:%22api.telegram.org/bot%22,%22dateRange%22:180}
+CHAT_SOURCE = "" # ID of the source Chat (group, channel, etc.)
+CHAT_DESTINATION = "" # ID of the destination chat (Your own Chat ID)
 
 # === COLOR DEFINITIONS ===
 RED = "\033[38;2;255;0;0m"
@@ -278,3 +278,4 @@ if __name__ == "__main__":
     listening_thread = threading.Thread(target=listen_and_forward, daemon=True)
     listening_thread.start()
     send_from_console()
+  
